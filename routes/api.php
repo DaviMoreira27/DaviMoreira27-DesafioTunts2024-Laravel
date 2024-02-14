@@ -2,6 +2,9 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use Nette\Utils\Json;
+use App\Http\Controllers\GoogleSheetsAPI;
+use GuzzleHttp\Psr7\Response;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,6 +17,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
+// Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
+//     return $request->user();
+// });
+
+
+Route::get('/values', function(){
+    $googleSheets = new GoogleSheetsAPI("11noy7IP6xjwcCidWczdvB1iNOw2_3TRlDmGbET35JXk", "3:28");
+    return response()->json(($googleSheets->handleRowsResult()));
 });

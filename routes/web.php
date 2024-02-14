@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\GoogleSheetsAPI;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     $googleSheets = new GoogleSheetsAPI("11noy7IP6xjwcCidWczdvB1iNOw2_3TRlDmGbET35JXk", "3:28");
+//     dd($googleSheets->handleRowsResult());
+// });
