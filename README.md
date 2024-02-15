@@ -8,6 +8,8 @@ Be certainly that you have PHP 8.1 or greater and Composer installed in your mac
 
 Example: http://127.0.0.1:8000/api/values
 
+**To insert new data: http://127.0.0.1:8000/api/insert**
+
 <code>git clone https://github.com/DaviMoreira27/DaviMoreira27-DesafioTunts2024-Laravel</code>
 
 <code>cd DaviMoreira27-DesafioTunts2024-Laravel</code>
