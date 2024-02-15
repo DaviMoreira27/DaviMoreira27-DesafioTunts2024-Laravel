@@ -4,6 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use Nette\Utils\Json;
 use App\Http\Controllers\GoogleSheetsAPI;
+use App\Http\Controllers\Student;
 use GuzzleHttp\Psr7\Response;
 
 /*
@@ -22,7 +23,29 @@ use GuzzleHttp\Psr7\Response;
 // });
 
 
-Route::get('/values', function(){
-    $googleSheets = new GoogleSheetsAPI("11noy7IP6xjwcCidWczdvB1iNOw2_3TRlDmGbET35JXk", "3:28");
-    return response()->json(($googleSheets->handleRowsResult()));
+Route::get('/values', function () {
+    $student = new Student("11noy7IP6xjwcCidWczdvB1iNOw2_3TRlDmGbET35JXk", "4:28");
+    return response()->json(($student->checkLackOfGrade()));
+});
+
+Route::get('/insert', function () {
+    $student = new Student("11noy7IP6xjwcCidWczdvB1iNOw2_3TRlDmGbET35JXk", "4:27");
+    $newValue = $student->checkLackOfGrade();
+    $emptyArr = [];
+
+    foreach ($newValue as $value) {
+        array_push($emptyArr, [
+            $value['situacao'],
+            $value['naf']
+        ]);
+    }
+
+    $google = new GoogleSheetsAPI("11noy7IP6xjwcCidWczdvB1iNOw2_3TRlDmGbET35JXk", "4:27");
+    return $google->insertData("G4:H27", $emptyArr);
+});
+
+
+Route::get('/get/raw', function () {
+    $student = new Student("11noy7IP6xjwcCidWczdvB1iNOw2_3TRlDmGbET35JXk", "4:27");
+    return response()->json(($student->getData()));
 });
