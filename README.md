@@ -25,8 +25,18 @@ Example: http://127.0.0.1:8000/api/values
 
 
 ![image](https://github.com/DaviMoreira27/DaviMoreira27-DesafioTunts2024-Laravel/assets/87380722/5703a276-9ab5-4d99-a45f-66b7be7f8969)
+</br>
+</br>
 ![image](https://github.com/DaviMoreira27/DaviMoreira27-DesafioTunts2024-Laravel/assets/87380722/67434baa-ea32-4fd0-a34a-7b985b9f24ae)
+</br>
+</br>
 ![image](https://github.com/DaviMoreira27/DaviMoreira27-DesafioTunts2024-Laravel/assets/87380722/8e24a7b4-985d-4d71-bf8c-a1b1497ef48e)
+</br>
+</br>
 ![image](https://github.com/DaviMoreira27/DaviMoreira27-DesafioTunts2024-Laravel/assets/87380722/61b742bd-128a-427f-8188-418349fce525)
+</br>
+</br>
 ![image](https://github.com/DaviMoreira27/DaviMoreira27-DesafioTunts2024-Laravel/assets/87380722/630a338a-247c-45b8-8876-53f749f89e07)
+</br>
+</br>
 ![image](https://github.com/DaviMoreira27/DaviMoreira27-DesafioTunts2024-Laravel/assets/87380722/3b2b45a3-29e1-4a9f-a2e2-d97f08012dc3)
